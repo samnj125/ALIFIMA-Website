@@ -93,3 +93,70 @@ nav a:hover {
     font-weight: bold;
     cursor: pointer;
 }
+.about-home {
+
+    background: url("../images/client1.jpg") no-repeat center center;
+    background-size: cover;
+
+    height: 700px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* move content to right */
+
+    padding-right: 0px;
+
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+
+
+/* overlay */
+
+.about-home::before {
+
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: rgba(5, 5, 5, 0.6);
+
+}
+
+
+/* text box */
+
+.about-content {
+
+    position: relative;
+    max-width: 750px;
+    text-align: left;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    
+}
+
+
+.about-content h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.about-content button {
+
+    padding: 20px 15px;
+    background: yellow;
+    border: none;
+    display: flex;
+    font-weight: bold;
+    margin-top: 30px;
+}
