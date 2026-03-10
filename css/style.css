@@ -1,0 +1,95 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background: #ffffff;
+}
+
+/* Logo */
+.alfima_logo {
+    background: #f4f4f4;
+    padding: 20px 20px;
+}
+
+.alfima_logo img {
+    height: 100px;
+}
+
+/* Navbar */
+nav {
+    background: #65468b; /* purple */
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px 0;
+}
+
+/* Links */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 8px 10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #5a3a7a;
+    border-radius: 4px;
+}
+
+/* Hero */
+
+.hero {
+    background: url("../images/hero.jpg") no-repeat center center;
+    background-size: cover; /* Cover entire hero area */
+    position: relative;
+    height: 900px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    padding-left: 50px; /* Space for text from left */
+    color: white;
+}
+
+/* Overlay to make text readable */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* semi-dark overlay */
+}
+
+/* Hero text container */
+.hero-text {
+    position: relative; /* stays above overlay */
+    max-width: 600px;   /* prevents text from stretching too much */
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.hero-text button {
+    padding: 12px 25px;
+    background: yellow;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
